@@ -13,7 +13,7 @@ class Shelter
 			children_or_child = client.num_of_children.to_i > 1 ? "children" : "child"
 			pets_or_pet = client.num_of_pets.to_i ? "pets" : "pet"
 		  puts "[#{client.name}, #{client.num_of_children} #{children_or_child},"\
-		       "#{client.age} years old, #{client.num_of_pets} #{pets_or_pet}]"
+		       " #{client.age} years old, #{client.num_of_pets} #{pets_or_pet}]"
 	  end
 	end
 
