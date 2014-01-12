@@ -170,7 +170,7 @@ while choice != 'q'
     elsif continue == "n"
         puts "This option doesn't apply since no client is ready for adoption now" 
     else 
-      puts "The answer has to be yes or no ( y or n), please try again later" 
+      puts "The answer has to be yes or no ( y or n)" 
     end
    
 
