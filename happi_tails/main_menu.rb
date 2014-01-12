@@ -117,13 +117,12 @@ while choice != 'q'
          client.name == name_of_client_who_adopts
        end
        #in case there are two clients with the same name, I choose the first one
-      puts " Getting ready to finalize the adoption process of our #{chosen_animal.species}"
-           " named #{chosen_animal.name} by #{client_who_adopts.first.name}"
+      puts "Getting ready to finalize the adoption process of our #{chosen_animal.name}"
     #5) Make the adoption happen (the client gains a pet and the shelter gives it for adoption)
      client_who_adopts.first.adopt()
-     shelter.give_for_adoption(animal_chosen)
-     puts "Everything worked perfectly, now #{client_who_adopts.name} has successfully "
-          "adopted #{animal_chosen.name} "
+     shelter.give_for_adoption(chosen_animal)
+     puts "Everything worked perfectly, #{client_who_adopts.first.name} has successfully "\
+          "adopted #{chosen_animal.name} "
     end
   when "6"
     message += 'option 6'
